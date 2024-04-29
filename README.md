@@ -30,10 +30,13 @@ Evaluations of the MAPQ quality parameter has been analyzed in R (R_analyses_MAP
 
 ### Comparison by k-mers approch (./k-mers_approach)
 In parralel, reads has been compared to a reference k-mers database (kraken.sh) using Kraken2/2.1.2 software. 
+Outputs of Kraken was parsed using 
 
 ## No-priori approach
-### Meta-assembly 
-Reads of all samples has been assembled by ... software.
+### Meta-assembly (./Meta_assembly)
+Reads of all samples has been assembled into contigs by MEGAHIT/1.2.9 software (assembly.sh).
+
+
 ### Mapping reads against meta-genomes
 
 ### Comparison using k-mers approach
