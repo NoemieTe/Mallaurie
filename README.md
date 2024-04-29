@@ -1,7 +1,7 @@
 # Mallaurie
-Stage de M2
+Master's internship.
 
-## Objectif du projet 
+## Project goals 
 Le projet a pour objectif de retrouver et quantifier les espèces présentes dans des échantillons de miels séquencés en basse couverture. 
 
 ## Trimming des lectures brutes
