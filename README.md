@@ -23,7 +23,8 @@ Reads were aligned against the expected reference genomes (Mapping_against_refer
 To remove alignment errors, the MAPQ quality parameter has been modified to range from 0 to 50 (Mapping_evaluation_MAPQ.sh).
 
 
-### Comparison by k-mers approch
+### Comparison by k-mers approch (./k-mers_approach)
+In parralel, reads has been compared to a reference k-mers database (kraken.sh) using Kraken2/2.1.2 software. 
 
 ## No-priori approach
 ### Meta-assembly 
