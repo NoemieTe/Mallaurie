@@ -20,7 +20,11 @@ Reads were aligned against the expected reference genomes (Mapping_against_refer
 - chestnut (GCA_000763605.2_ASM76360v2_genomic.fna),
 - bee holobiont published by Bovo et al, 2020 (HB_Mop_v2016.1.fasta).
 
+Mapping has been analized in R to see the percentage of aligned reads versus the total number of sequenced reads in each samples, and the correlation bettween the alignment against bee and varroa destructor (R_analyses_mapping). 
+
 To remove alignment errors, the MAPQ quality parameter has been modified to range from 0 to 50 (Mapping_evaluation_MAPQ.sh).
+
+Evaluations of the MAPQ quality parameter has been analyzed in R (R_analyses_MAPQ). 
 
 
 ### Comparison by k-mers approch (./k-mers_approach)
