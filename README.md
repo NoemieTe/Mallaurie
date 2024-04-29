@@ -19,6 +19,7 @@ Reads were aligned against the expected reference genomes (Mapping_against_refer
 - locust (cihuai.FINAL.fasta),
 - chestnut (GCA_000763605.2_ASM76360v2_genomic.fna),
 - bee holobiont published by Bovo et al, 2020 (HB_Mop_v2016.1.fasta).
+
 To remove alignment errors, the MAPQ quality parameter has been modified to range from 0 to 50 (Mapping_evaluation_MAPQ.sh).
 
 
