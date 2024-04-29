@@ -33,7 +33,7 @@ In parralel, reads has been compared to a reference k-mers database (kraken.sh) 
 
 ## No-priori approach
 ### Meta-assembly 
-
+Reads of all samples has been assembled by ... software.
 ### Mapping reads against meta-genomes
 
 ### Comparison using k-mers approach
