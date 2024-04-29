@@ -2,9 +2,10 @@
 Master's internship.
 
 ## Project goals 
-Le projet a pour objectif de retrouver et quantifier les espèces présentes dans des échantillons de miels séquencés en basse couverture. 
+The aim of the project is to find et quantify the spiecies present in samples of honey sequenced in low coverage. 
 
-## Trimming des lectures brutes
+## Trimming raw reads
+Reads were filtred to remowe low quality reads (trimming.sh). The remaining reads then passed quality control (fastqc.sh et multiqc.sh). 
 
 ## Approche avec a priori 
 ### Mapping contre des génomes de référence
