@@ -6,11 +6,15 @@ Le projet a pour objectif de retrouver et quantifier les espèces présentes dan
 
 ## Trimming des lectures brutes
 
-
-## Mapping contre des génomes de référence
-
-
-## Comparaison par approche k-mers 
+## Approche avec a priori 
+### Mapping contre des génomes de référence
 
 
-## Méta-assemblage 
+### Comparaison par approche k-mers 
+
+## Approche sans a priori
+### Méta-assemblage 
+
+### Mapping des lectures contre les méta-génomes
+
+### Comparaison par approche k-mers
