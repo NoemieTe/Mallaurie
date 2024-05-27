@@ -1,34 +1,34 @@
-################################# Telechargement des packages ########################################################################
+################################ Packages ########################################################################
 library(ggplot2)
 library(ggrepel)
 library(corrplot)
 library(hrbrthemes)
 library(dplyr)
 
-############################### Telechargement des donnees #######################################################################################
+############################### Data #######################################################################################
 
 setwd("//pnas2.stockage.inrae.fr/user_genphyse/non-tit/nteixido/Bureau/mallaurie/mapping/run1/resultats_complets/")
 
 sumstatsrun1_HAV31=read.table("resultat_after_flagstat_HAv31.txt",h=T)
 sumstatsrun1_amelmel=read.table("resultat_after_flagstat_amelmel.txt",h=T)
 
-################################### Ajout du type d'echantillon ################################################################################
+################################### Type of sample ################################################################################
 
 sumstatsrun1_HAV31$echantillon <- ifelse(sumstatsrun1_HAV31[,1] %in% c("GPS221025", "GPS221046"), "cire", "miel")
 sumstatsrun1_amelmel$echantillon <- ifelse(sumstatsrun1_HAV31[,1] %in% c("GPS221025", "GPS221046"), "cire", "miel")
 
-################################# Ajout du nom du genome #######################################################################################
+################################# Name of genomes #######################################################################################
 sumstatsrun1_amelmel$genome = "Amelmel"
 sumstatsrun1_HAV31$genome = "HAv31"
 
 ################################### mapping Amelmel VS HAV31 ##################################################################################
 
-#Filtrer
+#Filter
 #tableau amelmel et hav31 du run1
 data_abeillerun1 = cbind.data.frame(sumstatsrun1_amelmel$identifiant, sumstatsrun1_amelmel$echantillon, sumstatsrun1_amelmel$projet, sumstatsrun1_amelmel$PC_primary_mapped, sumstatsrun1_amelmel$in_total, sumstatsrun1_HAV31$PC_primary_mapped, sumstatsrun1_HAV31$in_total)
 colnames(data_abeillerun1) = c("ID", "Echantillon", "Projet", "PC_Amelmel", "Total_Amelmel", "PC_HAv31", "Total_HAv31")
 
-#Calculer la différence Amelmel - HAv31
+#Compute : Amelmel - HAv31
 all_data_abeille$DPC_primary_mapped = all_data_abeille$PC_Amelmel - all_data_abeille$PC_HAv31
 summary(all_data_abeille)
 
