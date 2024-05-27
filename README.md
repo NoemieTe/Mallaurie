@@ -1,5 +1,5 @@
 # Mallaurie
-Master's internship.
+Master's internship of Noémie Teixido, supervised by Thibault Leroy : thibault.leroy@inrae.fr.
 
 ## Project goals 
 The aim of the project is to find et quantify the spiecies present in samples of honey sequenced in low coverage. 
