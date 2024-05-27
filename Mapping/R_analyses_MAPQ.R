@@ -13,24 +13,20 @@ all_data_MAPQ_run1 = NULL
 
 for (i in fichiers) { 
   
-  #On enleve l'extension
+
   nom_tableau = sub("\\.txt", "", i)
   assign(nom_tableau, read.table(i, header = T)) 
   
-  # Extraire le numéro de la fin du titre
   mapq = as.numeric(str_extract(nom_tableau, "\\d+$"))
   
-  # Ajouter une colonne "MAPQ" avec le numéro extrait
   assign(nom_tableau, transform(get(nom_tableau), MAPQ = mapq))
-  
-  # Fusionner les tableaux
+
   if (is.null(all_data_MAPQ_run1)) {
     all_data_MAPQ_run1 = get(nom_tableau)
   } else {
     all_data_MAPQ_run1 = rbind(all_data_MAPQ_run1, get(nom_tableau))
   }
 }
-# Supprimer les lignes où MAPQ = 256
 all_data_MAPQ_run1 = subset(all_data_MAPQ_run1, MAPQ != 256)
 all_data_MAPQ_run1$projet = "Mallaurie"
 
