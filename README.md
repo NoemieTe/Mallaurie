@@ -54,6 +54,7 @@ Results of Blastn alignment were parsed by run_parsing_blastn.sh script using pa
 In parallel, statistics of bins were compute by statistics/R/4.2.2 and assemblathon2/d1f044b softwares (statistics_bins.sh). 
 
 A table grouping bins, species and statistics has been handwritten. 
+![stats_mag_blastn](https://github.com/NoemieTe/Mallaurie/assets/120317664/94818c35-2852-461d-89ec-bd84f70df959)
 
 ### Mapping reads against meta-genome (./Meta_assembly)
 Bins were merged into one file (merge_bins.sh) and indexed by bwa-mem2/2.2.1 software (index_bins.sh). 
@@ -63,5 +64,6 @@ Outputs has been analyzed in R to :
 - describe the diversity of species in meta-genome (diversity_MAG.R),
 - assign a plant specie for each sample (plants_species.R).
 
-
+![panel_diag](https://github.com/NoemieTe/Mallaurie/assets/120317664/dcf65e8a-b224-436a-9264-cf178f1ff38e)
+![heatpmap - Copie](https://github.com/NoemieTe/Mallaurie/assets/120317664/9925772b-4fc9-4c6c-ab03-1a4becad23af)
 
