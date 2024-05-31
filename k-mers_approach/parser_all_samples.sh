@@ -10,5 +10,5 @@ ls *classees.txt | sed 's/_/\t/g' | awk '{print $1"_"$2"_"$3"_"$4"_"$5"_"$6}' | 
 
 while read line; do
         ind=$(echo "$line")
-        python3 ~/work/Mallaurie_data/scripts/script_parser_kraken.py ~/work/Mallaurie_data/analyses/Assignation_taxonomique_kraken/"$line"_classees.txt ~/work/Mallaurie_data/analyses/Assignation_taxonomique_kraken/parser/"$line"_parser.txt
+        python3 ~/work/Mallaurie_data/scripts/parser_kraken.py ~/work/Mallaurie_data/analyses/Assignation_taxonomique_kraken/"$line"_classees.txt ~/work/Mallaurie_data/analyses/Assignation_taxonomique_kraken/parser/"$line"_parser.txt
 done < /home/nteixido/work/Mallaurie_data/analyses/Assignation_taxonomique_kraken/list_id_parser
