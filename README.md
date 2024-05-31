@@ -34,7 +34,7 @@ Evaluations of the MAPQ quality parameter were analyzed in R (R_analyses_MAPQ.R)
 
 ### Comparison by k-mers approch (./k-mers_approach)
 In parallel, reads were compared to a reference k-mers database (kraken.sh) using Kraken2/2.1.2 software. 
-Outputs of Kraken were parsed with the script parser_all_samples.sh using the parser_kraken.sh script. 
+Outputs of Kraken were parsed with the script parser_all_samples.sh using the parser_kraken.py script. 
 Results were summarized by order for Apidae, Hymenoptera, and Fagales (resume_parsing_kraken.sh) and compared with mapping results (comparison_with_mapping.R).
 
 ![analyzes R for varroa](https://private-user-images.githubusercontent.com/120317664/334111198-690a0145-2438-4b06-ae6f-d1a29cd15d8d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTY4MjM2MjEsIm5iZiI6MTcxNjgyMzMyMSwicGF0aCI6Ii8xMjAzMTc2NjQvMzM0MTExMTk4LTY5MGEwMTQ1LTI0MzgtNGIwNi1hZTZmLWQxYTI5Y2QxNWQ4ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTI3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUyN1QxNTIyMDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00OGQ3YzM5MjMxM2NkYjQ3M2I1YjJmYmQ0Zjc4YmZhNTlhMGJmOTg5NDNlZjU4NGJkOGNjZmNiOWY5NmJkZmEwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.N0Gy-7xhIJG9B_bJmNa-oE5Scca-SwK-sO0wNakXn4A)
